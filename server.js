@@ -29,7 +29,7 @@ app.post('/mail',async(req,res)=>{
  try{
   await sendEmail(process.env.EMAIL_USER,email,"React MailSender Project",
   `<h1>React Mail Sender Project</h1><p>${description}</p>
-  <a href="http://localhost:3000">Go To MailSender</a>`);
+  <a href="https://mailsender-673k.onrender.com">Go To MailSender</a>`);
   res.status(200).send({ Success: true, message: "Mail Sent" })
   console.log("Email Delievered");
  }
